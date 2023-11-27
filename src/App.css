@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grider{
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+.menu{
+  width: 140vw;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.showmenu{
+  margin-left: 15vw;
+  width: 50vw;
+  transition: all linear 0.5s;
+}
