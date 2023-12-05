@@ -1,8 +1,26 @@
-# React + Vite
+## The Beauty In Chaos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project report, we first explain chaotic systems and chaotic attractors and
+explain how chaotic systems can be used as entropy seeds to Physical Unclonable
+Functions (PUFs) which act as random number generators for providing musical notes.
+We then implement such a random number generator in Python, using Lorenz
+Attractor and XOR-Arbiter PUFs and use them to generate random numbers. We
+then use the randomly generated numbers to choose notes and then use L systems
+for abstract rewriting of those notes. Finally, we use a MIDI writer to translate
+the notes into a MIDI file and play it on our website.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## GROUP MEMBERS
+- Dhruv Jain - 202301272
+- Guru Vyas - 202301196
+- Jas Mehta - 202301432
+- Parshv Joshi - 202301039
+- Siddharth Rambhia - 202301072
+- Yug Savalia - 202301263
+- Yug Tejani - 202301487
+
+Explanation video - [https://drive.google.com/file/d/1KTkvWgphuLwyVB9uZLm6VYQB0sVyft22/view?usp=drive_link]
+
+PDF - [https://dhruvkjain.github.io/CalMuse/assets/calculusPDF-0V0-ZjmD.pdf]
+
+## We want to thank Prof. Manish Gupta, for guiding us throughout our project journey and Prof. Mukesh Tiwari for introducing us to Chaotic Systems.
