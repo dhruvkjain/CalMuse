@@ -283,7 +283,7 @@ function App() {
               Theory, to generate a musical note.
             </p>
             <div className='pt-6'>
-              <a className='text-blue-500 underline' href="">Explanation video - The Beauty in Choas</a>
+              <a className='text-blue-500 underline' href="https://drive.google.com/file/d/1KTkvWgphuLwyVB9uZLm6VYQB0sVyft22/view?usp=drive_link">Explanation video - The Beauty in Choas</a>
               <br></br>
               <a className='text-blue-500 underline' download href={calculusPDF}>PDF</a>            
             </div>
