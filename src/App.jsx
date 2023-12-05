@@ -216,9 +216,29 @@ function App() {
       <div className=''>
         <div className='flex justify-center items-center h-screen'>
           <div className='bg-[#0009] grider grid p-2 rounded-2xl w-[70vw] h-[80vh]'>
-            <h1 className='text-[40px]'>Cal-Muse</h1>
-            <div className='w-full p-2'>
-              home
+            <h1 className='text-[3rem]'>Cal-Muse</h1>
+            <div className='w-full p-2 overflow-y-auto'>
+              <div className='details'>
+                <h1 className='text-[2rem]'>The Beauty in Chaos</h1>
+                <div class="hor">
+                  <div class="horm2"></div>
+                </div>
+                  <p className=''>We would like to thank Prof. Manish Gupta, for guiding us throughout our project journey and Prof. Mukesh Tiwari for introducing us to Chaotic
+                  Systems.</p>
+                <h1 className='pt-4 text-[2rem]'>GROUP MEMBERS</h1>
+                <div class="hor">
+                  <div class="horm2"></div>
+                </div>
+                <ul>
+                  <li>Dhruv Jain - 202301272</li>
+                  <li>Guru Vyas - 202301196</li>
+                  <li>Jas Mehta - 202301432</li>
+                  <li>Parshv Joshi - 202301039</li>
+                  <li>Siddharth Rambhia - 202301072</li>
+                  <li>Yug Savalia - 202301263</li>
+                  <li>Yug Tejani - 202301487</li>
+                </ul>
+              </div>
             </div>
             <div className='navbar overflow-hidden'>
               <div className='menu'>
@@ -238,18 +258,34 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+      </div>
         <ParticlesBg type="square" bg={true} />
       </div>
     )
   }
   else if (page == 'theory') {
     return (
-      <div className='flex justify-center items-center h-screen'>
+      <div className='flex justify-center items-center h-screen'>a
         <div className='bg-[#0009] grider grid p-2 rounded-2xl w-[70vw] h-[80vh]'>
-          <h1 className='text-[40px]'>Cal-Muse</h1>
-          <div className='w-full p-2 overflow-y-auto'>
-            theory
+          <h1 className='text-[3rem]'>Cal-Muse</h1>
+          <div className='w-full p-2 overflow-y-auto details'>
+            <h1 className='text-[2rem]'>The Beauty in Chaos</h1>
+            <div class="hor">
+              <div class="horm2"></div>
+            </div>
+            <p>
+              In this project report, we first explain chaotic systems and chaotic attractors, and
+              explain how chaotic systems can be used as entropy seeds to Physical Unclonable
+              Functions (PUFs) to act as True Random Number Generators (TRNG). We then
+              implement a random number generator in Python, using Lorenz Attractor
+              and XOR-Arbiter PUFs and use it, coupled with our understanding of Music
+              Theory, to generate a musical note.
+            </p>
+            <div className='pt-6'>
+              <a className='text-blue-500 underline' href="">Explanation video - The Beauty in Choas</a>
+              <br></br>
+              <a className='text-blue-500 underline' href="">PDF</a>            
+            </div>
           </div>
 
           <div className='navbar overflow-hidden'>
@@ -280,8 +316,8 @@ function App() {
       <div className=''>
         <div className='flex justify-center items-center h-screen'>
           <div className='bg-[#0009] overflow-y-auto overflow-x-hidden grider grid p-2 rounded-2xl w-[70vw] h-[80vh]'>
-            <h1 className=' text-[40px]'>Cal-Muse</h1>
-            <div className='w-full p-2'>
+            <h1 className=' text-[3rem]'>Cal-Muse</h1>
+            <div className='w-full p-2 overflow-y-auto'>
               <div className='w-full p-2'>
                 <input onChange={inputall} id='inputx' className='p-1 text-center rounded-2xl' type="number" placeholder="Enter x"></input>
               </div>
@@ -299,15 +335,15 @@ function App() {
               <div class="hor">
                 <div class="horm"></div>
               </div>
-              <div className='m-8 flex flex-wrap justify-center'>
-                <div className='text-[25px] mr-8'>MIDI Song :</div>
+              <div className='m-4 mb-0 flex flex-wrap justify-center'>
+                <div className='text-[1.5rem] details mr-8'>MIDI Song :</div>
                 {
                   (plink == '' || plink == 'problem')
                     ? <div>
                       {
                         (plink == 'problem')
-                          ? <div className='text-[1.2rem] m-2'>Regenerate after a minute or two please</div>
-                          : <div className='text-[1.2rem] m-2'>Wait for few seconds before Regenerating please</div>
+                          ? <div className='text-[1.2rem] details m-2'>Regenerate after a minute or two please</div>
+                          : <div className='text-[1.2rem] details m-2'>Wait for few seconds before Regenerating please</div>
                       }
                     </div>
                     : <MidiPlayer data={plink} />
@@ -315,7 +351,11 @@ function App() {
               </div >
               <div>
                 {
-                  (plink == "new") ? <div>Regenrating new</div> : <div></div>
+                  (plink == "new") 
+                    ? <div className='flex p-2 justify-center'>
+                        <div className='loader'></div>
+                      </div>
+                    : <div></div>
                 }
               </div>
               <div class="hor">
@@ -347,7 +387,7 @@ function App() {
             </div>
 
           </div>
-        </div>
+      </div>
         <ParticlesBg color="#ffffff" type="cobweb" bg={true} />
       </div>
     )
@@ -367,8 +407,6 @@ function App() {
       </div>
     )
   }
-
-
 }
 
 export default App
