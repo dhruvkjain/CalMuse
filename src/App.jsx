@@ -3,6 +3,7 @@ import ParticlesBg from 'particles-bg'
 import MidiWriter from 'midi-writer-js';
 import MidiPlayer from 'react-midi-player';
 import Tilt from 'react-parallax-tilt';
+import calculusPDF from "../calculusPDF.pdf";
 import './App.css'
 
 function App() {
@@ -284,7 +285,7 @@ function App() {
             <div className='pt-6'>
               <a className='text-blue-500 underline' href="">Explanation video - The Beauty in Choas</a>
               <br></br>
-              <a className='text-blue-500 underline' href="">PDF</a>            
+              <a className='text-blue-500 underline' download href={calculusPDF}>PDF</a>            
             </div>
           </div>
 
@@ -318,6 +319,8 @@ function App() {
           <div className='bg-[#0009] overflow-y-auto overflow-x-hidden grider grid p-2 rounded-2xl w-[70vw] h-[80vh]'>
             <h1 className=' text-[3rem]'>Cal-Muse</h1>
             <div className='w-full p-2 overflow-y-auto'>
+              <div className='details'>Enter initial (x,y,z) values of Lorenz Attractor</div>
+              <div className='details'>First time it might take a bit long please wait</div>
               <div className='w-full p-2'>
                 <input onChange={inputall} id='inputx' className='p-1 text-center rounded-2xl' type="number" placeholder="Enter x"></input>
               </div>
