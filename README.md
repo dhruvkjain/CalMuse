@@ -23,3 +23,8 @@ the notes into a MIDI file and play it on our website.
 [Research Paper PDF](https://dhruvkjain.github.io/CalMuse/assets/calculusPDF-0V0-ZjmD.pdf)
 
 ## We want to thank Prof. Manish Gupta, for guiding us throughout our project journey and Prof. Mukesh Tiwari for introducing us to Chaotic Systems.
+
+
+# Note :
+> If the website doesn't outputs a midi song please wait for all packages to get installed and try after a 10 minutes
+> I will fix this issue sooner 
